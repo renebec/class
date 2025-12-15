@@ -1,355 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-          rel="stylesheet">
-    <script>
-        function updateDateTime() {
-            // Get the current date and time in Central Mexico
-            let options = {
-                timeZone: "America/Mexico_City",
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-                hour: "2-digit",
-                minute: "2-digit",
-                second: "2-digit",
-                hour12: true
-            };
+<meta charset="utf-8" />
+<title>mat1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-            let currentDateTime = new Date().toLocaleString("es-MX", options);
+</head>
 
-            // Format the date and time as "9 de abril de 2025, 09:40:00"
-            const dateTimeElement = document.getElementById('date-time');
-            if (dateTimeElement) {
-                dateTimeElement.innerHTML = currentDateTime;
-            }
-        }
 
-        // Update the time every second
-        setInterval(updateDateTime, 1000);
+<style>
 
-        // Initial call to set the time immediately
-        updateDateTime();
-    </script>
-    <style>
+  .container{
+      margin-left:auto;
+      margin-right:auto;
+      text-align:justify;
+      font-size:21px;
+  }
 
-        #btnCerrar {
-            
-            position: sticky;
-            top:0;
-            margin-top:0px;
-            margin-left:75%;
-            z-index: 1000;
-        }
-        
-        #banner {
-            display:block;
-            margin-left:auto;
-            margin-right:auto;
-            width:100%;
-            height: 240px;
-            object-fit:cover;
-        }
-        body {
+  #portada{
+    object-fit:cover;
+    max-width:100%;
+    max-height:240px;
+  }
 
-            margin-left: auto;
-            margin-right: auto;
-            text-align:justify;
-        }
 
-        .partial-footer-total {
-            color:#AA99e1;
-            font-size:14px;
-        }
 
-        .navtxt{
-            color:rgb(100,100,100);
-        }
+  .banner2 {
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      max-height:200px;
+      object-fit:cover;
+      object-position: 0px -0px;
+  }
 
-        .btn-sm {
-            width:100px;
-        }
+  .logox {
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      max-height:220px;
+      max-width:185px;
+  }
 
-        .noexist {
-            
-        }
+  #avisos {
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      object-fit:fill;
+      object-position: 0px 0px;
+  }
 
-        
-    </style>
+  #banner {
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      width:100%;
+      max-height: 280px;
+      object-fit:cover;
+  }
+</style>
+
 <body>
 	
+	<div> 
 	<main class="container">
-		by HRBC<br>
-		Aguascalientes
+
+		<h1 style="background-color:yellow;">Sesión 1</h1>
+		Algunos grupos ya la hicieron, verificar si tienen la pirámide de colores y en ese caso pasar a SESIÓN 2
+		<br><br>
+		
+		<h2>Jerarquía de operaciones</h2>
+		<p>
+		<b>¿Qué es la jerarquía de operaciones?</b><br><br>
+		
+		Es el orden correcto en el que se realizan las operaciones. Usualmente, 
+		se aplica cuando se combinan varias operaciones en un mismo problema.
+		El orden de las operaciones es:
+		</p>
+		<br>
+		
+		<ol>
+			<li>Paréntesis</li>
+			<li>Potencias y raíces</li>
+			<li>Multiplicaciones y divisiones</li>
+			<li>Sumas y restas</li>
+		</ol>
+		<b>Además</b>, si se presentan varias operaciones juntas del mismo nivel jerárquico, estas se deberán resolver de 
+		<b>izquierda</b> a <b>derecha</b>.
+		
+		<br><br>
+		
+		Agrega en tus notas el siguiente diagrama y colorealo por niveles.<br><br>
+		<img width="550" src="https://math3logic.com/wp-content/uploads/2023/03/Jerarquia-de-operaciones-6-min.png">
+		<br><br>
+		
+		A continuación algunos ejemplos básicos:
+		<br><br>
+		<ul>
+			<li>15 – (8 – 6) = 15 – 2 = 13</li>
+			<li>6(3) – 2( 7 ÷ 7 ) =  18 – 2(1) = 18 – 2 = 16</li>
+			<li>√16 ÷ 2 = 4 ÷ 2 = 2</li>
+		</ul>
+		<br><br>
+		
+		<h1 style="background-color:yellow;">Sesión 2</h1>
+		
+		Escribe en tus notas los siguientes ejemplos:<br><br>
+		
+		<ul>
+			<li>4 + (12 – 7 ) = 4 + 5 = 9</li>
+			<li>(6 + 1 ) – 3 = 7 – 3 = 4</li>
+			<li>3(5 – 1 ) = 3(4) = 12</li>
+			<li>1 + ( 10 – 2(3) ) = 1 + (10 – 6) = 1 + 4 = 5</li>
+			<li>5² – √9( 4) = 25 – 3(4) = 25 – 12 = 13</li>
+			<li>4( 2³ + 1) = 4(8 + 1) = 4( 9 ) = 36</li>
+			<li>20 ÷ 5 + 3 × 6 = 4 + 18 = 22</li>
+			<li>6(3) – 2( 7 ÷ 7 ) =  18 – 2(1) = 18 – 2 = 16</li>
+			<li>3(5) + 2² – 4 ÷ 4 = 15 + 4 – 1 = 18</li>
+			<li>16 – 2(8 – 1 + 3 – 4 ) = 16 – 2(6) = 16 – 12 = 4</li>
+		</ul>
+		
+		<br>
+		En cuanto a la jerarquía de los signos de agrupación, estos deberán resolverse en el
+		siguiente orden:
+		<br><br>
+		
+		<ol>
+			<li>Paréntesis ()</li>
+			<li>Corchetes []</li>
+			<li>Llaves {}</li>
+		</ol>
+		<br>Algunos ejemplo:<br><br>
+		
+		<ul>
+			<li>[(13 – 7 ) + 8 ÷ 2] = [6 + 4] = 10</li>
+			<li>[ 15 – 2 ( 9 – 3) ] = [15 – 2(6)] = [15 – 12] = 3</li>
+			<li>{ 9 + [2(7 – 4) ] } = {9 + [2(3)]} = {9+6} = 15</li>
+		</ul>
+		
 		<br><br><br>
-
-						
-						</div> ​ <br><br> 
-						<h3>Las operaciones con raíces</h4> 
-						
-						En días anteriores trabajaste con potencias, que consisten en 
-						multiplicar un número varias veces por sí mismo.
-						Por ejemplo:
-						
-						<br><br>
-						3<sup>2</sup> = 3 * 3 = 9<br>
-						2<sup>3</sup> = 2 * 2 * 2 = 8
-						<br><br>
-						
-						En una potencia se reconocen:
-						
-						<br><br>
-						Base (el número que se multiplica)<br>
-						Exponente (cuántas veces se multiplica la base)<br>
-						<br>
-						
-						Ahora queremos resolver problemas en el sentido inverso de la potencia (al revés). Por ejemplo:
-						
-						<ul>
-							<li>¿Qué número multiplicado por sí mismo da 25?</li>
-							<li>¿Qué número elevado al cubo da 27?</li>
-							<li>¿Qué numero elevado a la tercera potencia da 64?</li>
-						</ul>
-						
-						Para responder a estas preguntas, no usamos potencias, sino <b>raíces</b>.
-						<br><br>
-						
-						<h3>¿Qués es una raíz?</h3>
-						Una raíz es la operación inversa o contraria de una potencia.
-						<br><br>
-						
-						La raíz de índice <i>n</i> de un número <i>a</i> es un
-						número <i>b</i> tal que:
-						<br><br>
-						
-						<i>b</i><sup><i>n</i></sup>=<i>a</i>
-						<br><br>
-						
-						Esto se escribe así:
-						<br><br>
-						<math> 
-								<mroot> 
-									<mrow> 
-										<mi>a</mi> 
-									</mrow> 
-										<mn>n</mn> 
-								</mroot> 
-							</math> 
-						
-						= b, &emsp;b<sup>n</sup> = a
-						<br><br>
-						Por ejemplo:
-						<br><br>
-						<math> 
-								<mroot> 
-									<mrow> 
-										<mi>25</mi> 
-									</mrow> 
-										<mn>2</mn> 
-								</mroot> 
-							</math> 
-						
-						= 5, y se lee <i>la raíz cuadrada de 25 es 5 </i>porque 5<sup>2</sup> = 25.
-						<br>
-						<math> 
-								<mroot> 
-									<mrow> 
-										<mi>27</mi> 
-									</mrow> 
-										<mn>3</mn> 
-								</mroot> 
-							</math> 
-						
-						= 3, y se lee <i>la raíz cúbica de 27 es 3</i> porque 3<sup>3</sup> = 27.
-						<br><br><br>
-						<h3>¿Qué partes tiene una raíz?</h3>
-						Observa la siguiente expresión:<br><br>
-						
-						<math> 
-								<mroot> 
-									<mrow> 
-										<mi>a</mi> 
-									</mrow> 
-										<mn>n</mn> 
-								</mroot> 
-							</math>
-							<br><br>
-						<ul>
-							<li><i>n</i>: <b>índice</b> (indica cuántas veces debe 
-							multiplicarse el resultado)</li>
-							<li><i>a</i>: <b>radicando</b> (de qué número queremos obtener la raíz)</li>
-							<li>Todo el símbolo: <b>radical</b> (la casita)</li>
-						</ul>
-						<br>
-						Si el índice no aparece, se entiende que es 2 (raíz cuadrada):
-						<br><br>
-						
-						<math> 
-								<mroot> 
-									<mrow> 
-										<mi>16</mi> 
-									</mrow> 
-										<mn></mn> 
-								</mroot> 
-							</math>
-							= 4
-						<br><br><br>
-						<h3>A continuación veremos algunos ejemplos</h3>
-						
-						2<sup>3</sup> = 8, entonces se dice que 
-						<math> 
-							<mroot> 
-								<mrow> 
-									<mi>8</mi> 
-								</mrow> 
-									<mn>3</mn> 
-							</mroot> 
-						</math> 
-						= 2, y se lee <i>la raíz cúbica de 8 es 2</i>. <br><br> 
-						
-						En este ejemplo el <b>radicando</b> es <b>8</b>, el <b>índice</b> es 3 y por último <b>2</b> es el valor de la <b>raíz</b>. <br><br> 
-						
-						5<sup>2</sup> = 25, entonces se dice que 
-							<math> 
-								<mroot> 
-									<mrow> 
-										<mi>25</mi> 
-									</mrow> 
-										<mn>2</mn> 
-								</mroot> 
-							</math> 
-							= 5, y se lee <i>la raíz cúbica de 25 es 5</i>. <br><br> En este segundo ejemplo el <b>radicando</b> es <b>25</b>, el <b>índice</b> es 2 y por último <b>5</b> es el valor de la <b>raíz</b>. <br><br> 
-							<br><br><br>
-							<h1>Resuelve los siguientes ejercicios</h1>
-							<ul>
-							
-								<li>
-									<math> 
-										<mroot> 
-											<mrow> 
-												<mi>4</mi> 
-											</mrow> 
-												<mn>2</mn> 
-										</mroot> 
-									</math>
-									=
-								</li>
-								<li>
-									<math> 
-										<mroot> 
-											<mrow> 
-												<mi>16</mi> 
-											</mrow> 
-												<mn></mn> 
-										</mroot> 
-									</math>
-									=
-								</li>
-								<li>
-									<math> 
-										<mroot> 
-											<mrow> 
-												<mi>27</mi> 
-											</mrow> 
-												<mn>3</mn> 
-										</mroot> 
-									</math>
-									=
-								</li>
-								<li>
-									<math> 
-										<mroot> 
-											<mrow> 
-												<mi>81</mi> 
-											</mrow> 
-												<mn>2</mn> 
-										</mroot> 
-									</math>
-									=
-								</li>
-								<li>
-									<math> 
-										<mroot> 
-											<mrow> 
-												<mi>625</mi> 
-											</mrow> 
-												<mn>4</mn> 
-										</mroot> 
-									</math>
-									=
-								</li>
-								<li>
-									<math> 
-										<mroot> 
-											<mrow> 
-												<mi>16</mi> 
-											</mrow> 
-												<mn>4</mn> 
-										</mroot> 
-									</math>
-									=
-								</li>
-								<li>
-									<math> 
-										<mroot> 
-											<mrow> 
-												<mi>216</mi> 
-											</mrow> 
-												<mn>3</mn> 
-										</mroot> 
-									</math>
-									=
-								</li>
-								<li>
-									<math> 
-										<mroot> 
-											<mrow> 
-												<mi>3125</mi> 
-											</mrow> 
-												<mn>5</mn> 
-										</mroot> 
-									</math>
-									=
-								</li>
-								<li>
-									<math> 
-										<mroot> 
-											<mrow> 
-												<mi>729</mi> 
-											</mrow> 
-												<mn>3</mn> 
-										</mroot> 
-									</math>
-									=
-								</li>
-								<li>
-									<math> 
-										<mroot> 
-											<mrow> 
-												<mi>256</mi> 
-											</mrow> 
-												<mn>8</mn> 
-										</mroot> 
-									</math>
-									=
-								</li>
-							
-							</ul>
-							
-					</div>			
-					<br><br><br><br><br>		
-		</main>
-
+		
+		
+	
+			<div class="actividad"> 
+				Ejercicios para resolver en clase. <br><br> 
+			
+				
+				<ul>
+					<li>100 - 2(5 + 4) - 4² + 25÷5 - √9 =</li>
+					<li>7(9 - 3 + 2²) - 5·4 + √4(35÷7) =</li>
+					<li>25 + 3(6÷2) + √64 - (12 - 5) - 2³ =</li>
+					<li>[30 - 2(5 + 4) - 1³] =</li>
+					<li>[9 - 3(5-3) + 2²] =</li>
+					<li>85 -[3(10 - 2²) + √36÷2] =</li>
+					<li>4(6÷2) + 5[2(10 - 7) + 9] =</li>
+					<li>1 + {27 - 2[(8 - 3) + √49]} =</li>
+					<li>8² - 3{5 + 4[6 - (20÷4)] - 1} =</li>
+					<li>{55 + [90÷9 - 1] - 6[(8-5) + 4]} + 10 =</li>
+					<li>27 - [2(5 + 1)] ÷ 3 =</li>
+					
+					
+				</ul>
+				
+				<br><br>
+				
+				
+	
+	</main>
+	</div>
+	
 </body>
 
 </html>
+
 
 
 
